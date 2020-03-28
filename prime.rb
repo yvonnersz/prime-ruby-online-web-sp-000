@@ -1,13 +1,9 @@
-# Add  code here!
-
-def prime?(integer)
-  range_numbers = (2..(integer-1)).to_a # we have to divide integer with a range of numbers
-  range_numbers.each do |num|
-    if integer == 2 || integer % num != 0
-      true
-    else
+def prime?(n)
+  return false if n < 2 
+  return true if n == 3 || n == 2 
+    if (2...n-1).any?{|i| n % i == 0}
       false
+    else
+      true
     end
-  end
-
 end
