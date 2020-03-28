@@ -5,9 +5,7 @@ def prime?(integer)
   range_numbers.each do |num|
     if integer == 2 || integer % num != 0
       true
-    elsif integer % num == 0
-      return false
     end
-    false
   end
+  false
 end
