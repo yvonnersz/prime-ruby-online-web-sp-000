@@ -1,12 +1,5 @@
 # Add  code here!
 
 def prime?(integer)
-  prime_nums = (1..11).to_a
-  prime_nums.each do |nums|
-    if integer % nums == 0
-      return true
-    else
-      return false
-    end
-  end
+(2..(integer-1)) # we have to divide integer with a range of numbers
 end
