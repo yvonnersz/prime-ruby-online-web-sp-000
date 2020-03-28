@@ -1,14 +1,12 @@
+0
 
+def prime?(n)
+  if n <= 1
+  return false
 
-def prime?(integer)
-  if integer < 2
-    false
-  elsif integer == 2 || integer == 3
-    true
-  elsif (2..integer-1).any? do |num|
-    integer % num == 0
-    false
-  end
-  end
+  else (2..n-1).to_a.all? do |integer|
+   n % integer != 0
+
+   end
   end
 end
