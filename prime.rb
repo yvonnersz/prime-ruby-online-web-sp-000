@@ -7,5 +7,5 @@ def prime?(integer)
       is_prime = true
     end
   end
-  is_prime
+  false
 end
