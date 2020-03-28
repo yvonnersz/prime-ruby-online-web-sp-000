@@ -5,8 +5,6 @@ def prime?(integer)
   range_numbers.each do |num|
     if integer == 2 || integer % num != 0
       is_prime = true
-    else
-      is_not_prime = false
     end
   end
   is_prime
