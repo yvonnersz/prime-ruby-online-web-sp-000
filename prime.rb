@@ -6,6 +6,6 @@ def prime?(integer)
   elsif (2..integer-1).any? do |num|
     integer % num != 0
     return true
-   end
+  end
   end
 end
