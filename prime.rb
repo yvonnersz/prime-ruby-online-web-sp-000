@@ -3,7 +3,9 @@
 def prime?(integer)
   range_numbers = (2..(integer-1)).to_a # we have to divide integer with a range of numbers
   range_numbers.each do |num|
-    if integer % num != 0
+    if integer == 2
+      return true
+    elsif integer % num != 0
       true
     else
       return false
