@@ -1,4 +1,4 @@
-0
+
 
 def prime?(n)
   if n <= 1
