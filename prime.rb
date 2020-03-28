@@ -1,10 +1,9 @@
 
 
-def prime?(n)
-  if n <= 1
-  return false
-
-  else (2..n-1).to_a.all? do |integer|
+def prime?(integer)
+  if integer <= 1
+    return false
+  elsif (2..n-1).any? do |integer|
    n % integer != 0
 
    end
